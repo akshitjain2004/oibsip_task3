@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@100;300;400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+body {
+	background: linear-gradient(-45deg, #312e2d, #110f10, #787a7b, #101111);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+:root{
+    --bg-color:#4646b9 ;
+    --second-color:#9c919e;
+ 
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+
+    
+
+}
+
+
+
+.heading{
+    position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+padding: 2rem 9%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 100 ;
+}
+
+
+.heading h1{
+    padding-left: 24rem;
+    color: white;
+}
+
+
+.container h3{
+    padding: none;
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+    margin-bottom: 5px;
+}
+
+#calcTemp {
+    padding: 29px 67px;
+height: 450px;
+width: 450px;
+    background-color: rgb(33, 31, 31);
+    border-radius: 50%;
+    padding-top: 70px;
+    box-shadow: 0 0 1rem var(--second-color);
+    transition: all 0.5s ease;
+}
+
+label {
+    font-size: 30px;
+    line-height: 78px;
+}
+
+#temp {
+    width: 110px;
+    height:110px;
+    border-radius: 50%;
+    margin: 12px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    padding-left: 45px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.3rem;
+    
+   
+}
+
+#temp:hover{
+    transform: scale(1.5)
+    
+  
+}
+
+#temp_diff {
+    width: 110px;
+    height:110px;
+    border-radius: 50%;
+    margin: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.3rem;
+  
+}
+
+#temp_diff:hover{
+    transform: scale(1.5)
+    
+  
+}
+
+#submit {
+    width: 100px;
+    border-radius: 20px;
+    margin: 20px 0 20px 0;
+    font-size: 18px;
+    background-color: rgb(218 229 220);
+    padding: 8px;
+    transition: all 0.5s ease;
+    box-shadow: bisque;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 0.5rem var(--bg-color);
+    font-family: "Times New Roman", Times, serif;
+    
+}
+
+#submit:hover{
+    background-color: rgb(96, 152, 226);
+    cursor: pointer;
+}
+
+#result{
+    font-size: 27px;
+    color: white;
+}
+
